@@ -1,15 +1,7 @@
 def fizzbuzz(int)
-  if int % 3 == 0 && int % 5 == 0
-    return "FizzBuzz"
-  end
-
-  if int % 3 == 0
-   return "Fizz"
-  end
-
-  if int % 5 == 0
-   return "Buzz"
-  end
-
+  string = ""
+  string += "Fizz" if int % 3 == 0
+  string += "Buzz" if int % 5 == 0
+  return string if string != ""
   return int
 end
